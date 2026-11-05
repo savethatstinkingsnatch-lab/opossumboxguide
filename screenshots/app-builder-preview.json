@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Hollow Home",
+      "hasCanvas": false,
+      "bodyTextLen": 8931,
+      "bodyTextHash": "60cd3ec69775a5ce2a11c9af7040b752b0c6be9b222d9a006e7cbd59103c7936",
+      "bodyTextPrefix": "Hollow Home The ticks The tenant The den Shop Build Where After ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Hollow Home",
+      "hasCanvas": false,
+      "bodyTextLen": 8879,
+      "bodyTextHash": "0ab9dc09454d50beae439bb7f4a6aadadea75308377196e79c2f9c4d0c22f778",
+      "bodyTextPrefix": "Hollow Home 0/12 built Field manual Build a den for the animal t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
