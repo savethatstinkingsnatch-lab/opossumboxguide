@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Plus, c as Hammer, d as Bug, i as Printer, l as ChevronDown, n as TreePine, o as Moon, r as RotateCcw, s as Minus, u as Check } from "../_libs/lucide-react.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-nxkDvJT5.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DOTgjwB9.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var hero_default = "/assets/hero-t-O7gv0X.jpg";
@@ -181,7 +181,7 @@ var buildSteps = [
 	{
 		id: "place",
 		title: "Bed it, carry it, leave it",
-		body: "Two inches of dry oak leaves or straw. No cedar shavings, no fabric, no newspaper. Carry the den to the spot you picked — don’t build it in place unless you like working on your knees in the mud. Do not put food inside. Check the latch, walk away, and give it two weeks before you peek."
+		body: "Two inches of dry oak leaves or straw. No cedar shavings, no fabric, no newspaper. Carry the den to the spot you picked — don’t build it in place unless you like working on your knees in the mud. Do not put food inside. Check the latch and leave it alone. Don’t open it later unless you know it is empty, and ask your state wildlife agency before you disturb an animal or a nest."
 	}
 ];
 var brushSteps = [
@@ -219,15 +219,15 @@ function siteAdvice(a) {
 	else if (a.cover === "shrubs") place = "Just outside the shrub’s dripline, so wet leaves don’t sheet into the doorway. Door facing away from the prevailing wind.";
 	else if (a.cover === "shed") place = "Along the shed wall that stays shady after lunch. Leave yourself a path, and don’t block a door you still use.";
 	else if (a.cover === "woodpile") place = "At the end of the woodpile, not inside it. You want the tenant in the box, not between the logs you’re about to carry.";
-	if (a.dogs === "yes") notes.push("A dog out at night will empty this plan. Put the den beyond the fence, or wait until the dog sleeps indoors. A cornered opossum is a vet bill, not tick control.");
+	if (a.dogs === "yes") notes.push("A dog out at night can harass whatever uses the box. Put the den beyond the fence, or skip it until the dog sleeps indoors. Cornering wildlife risks a bite and a vet bill.");
 	else if (a.dogs === "sometimes") notes.push("Give them a brushy exit. Don’t set the door facing a wall the dog can pin them against.");
 	if (a.poultry === "yes") notes.push("Opposite end of the property from the coop, and close the birds in before dark. Opossums are occasional egg thieves. An open coop is how a helpful neighbor becomes a problem. See also Volume 26: Chickens — latch the coop every night.");
 	if (a.drainage === "pools") notes.push("Set the runners up on four bricks. Don’t site it in the swale, even then. Wet bedding is an empty box.");
 	else notes.push("Your ground already drains. The cedar runners are enough — no bricks required.");
-	if (a.distance === "garden") notes.push("Fifteen to thirty feet from the beds is the useful distance. Their loop crosses the tick habitat, and they aren’t living under the porch.");
-	else if (a.distance === "far") notes.push("The back line is the right call. One den there beats three screwed to the house.");
-	else notes.push("Either distance works. Closer and you’ll hear rustling. Farther and you’ll mostly notice the leaves they drag in.");
-	notes.push("No food in the box, ever. Kibble turns it into a raccoon diner and a rat station. Dry leaves are the whole welcome.");
+	if (a.distance === "garden") notes.push("Near the garden is a place, not a tick strategy. There is no distance from the beds that makes a box reduce ticks. Keep it off the porch if you don’t want animals at the door.");
+	else if (a.distance === "far") notes.push("A back corner is a reasonable shaded spot. One box is enough to try. A second is optional, and neither comes with a spacing rule or a promise of use.");
+	else notes.push("Pick shade and cover. Closer and you might hear rustling. Farther and you might never know. Either way, use and timing are unpredictable.");
+	notes.push("No food in the box. Illinois Extension notes that food and shelter left out for opossums can also draw raccoons, feral cats, rats, mice, and other rodents. Dry leaves are bedding, not bait.");
 	return {
 		title: a.dogs === "yes" || a.cover === "none" ? "Change one thing first" : "Put it here",
 		place,
@@ -237,19 +237,19 @@ function siteAdvice(a) {
 var faqs = [
 	{
 		q: "Will this get rid of the ticks?",
-		a: "No box eliminates them. Mice are the animals that amplify blacklegged ticks and the Lyme bacterium. Opossums are poor hosts by comparison: in a 2009 lab study they groomed off nearly all the larval ticks placed on them. A later look at wild stomachs did not find the piles of ticks the meme promised, so treat “5,000 ticks” as a projection, not a quota. What you can count on is a native night animal that is a dead end for many of the ticks that climb aboard, plus a taste for slugs, snails, and beetles. Keep mowing the play lawn and keep doing tick checks."
+		a: "No. A den is not a dependable way to reduce ticks or to attract an opossum. In 2009, researchers put ticks on five captive opossums. About 3.5 ticks per animal fell off after feeding, and the missing ticks were assumed eaten. A 2021 study found no ticks or tick parts in the stomachs of 32 wild Illinois opossums, and 23 earlier diet studies found none either. Illinois Extension also cautions that food and shelter set out for opossums can draw other wildlife. Keep mowing play areas and keep doing tick checks."
 	},
 	{
 		q: "How is the famous number wrong?",
-		a: "Keesing and colleagues put 100 larval ticks on captive opossums. About 3.5 of them fed and dropped off; the rest were missing and presumed groomed away. Working backward from wild tick counts, they estimated an opossum might destroy more than 5,500 larvae in a peak week. Interviews rounded a season figure near 5,000. The meme picked whichever version sounded round. The grooming result is real. The weekly total is math, done on five animals, in a cage."
+		a: "Keesing and colleagues worked with five captive opossums. On average about 3.5 ticks per animal dropped off after feeding. The researchers assumed the missing ticks had been eaten. They did not establish that wild opossums regularly remove ticks. The estimate of more than 5,500 larval ticks in a peak week is math built on that assumption, not a count of ticks eaten outdoors."
 	},
 	{
 		q: "A raccoon moved in.",
-		a: "A 5″ hole also fits a small raccoon. You still have a nocturnal grub-eater, with worse manners. Don’t trap it — relocation is illegal in a lot of states and usually fatal for the animal. Skip food, keep trash shut, and the den stays a den instead of a feeding station. Making the hole bigger will not improve the situation."
+		a: "This design does not selectively admit opossums. A 5″ hole can fit a small raccoon and other animals of similar size. Do not trap or relocate them on your own. Whether that is legal depends on your state — ask the wildlife agency before you try. Skip food, keep trash shut, and don’t enlarge the hole."
 	},
 	{
 		q: "Will they move into the attic?",
-		a: "Attics happen because of a gap in the house, not because you offered a better room outside. A ground den is the alternative to the soffit. Cap the chimney and screen the vents anyway. If one is already inside, call a wildlife control operator who excludes and doesn’t poison."
+		a: "A ground box is not proven to keep opossums out of attics or to stop them using other shelter. An attic animal is there because of a gap in the house. Cap the chimney and screen the vents. If one is already inside, call someone who excludes without poison, and check what your state allows."
 	},
 	{
 		q: "Can I put out cat food so they find it?",
@@ -257,21 +257,21 @@ var faqs = [
 	},
 	{
 		q: "I found babies.",
-		a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods. Licensed rehabbers exist for a reason. Keeping joeys without a permit is illegal in most places and often kills them."
+		a: "Joeys can fall from the mother’s back. If a young animal is injured, clearly separated, or its mother is dead, contact a licensed wildlife rehabilitator promptly. Wisconsin DNR advises that call for an injured or very small opossum. Do not feed or handle it unless the rehabilitator tells you to. Do not try to raise it. What a permit allows depends on your state."
 	},
 	{
 		q: "Do they carry rabies?",
-		a: "Rarely. Their body temperature makes rabies uncommon, not impossible. Any mammal behaving oddly gets distance, not a photo. They hiss, drool, and sometimes fall over stiff when threatened — that threat display is normal. A daytime animal that is confused, unafraid, or injured is a reason to call animal control, not to diagnose it yourself."
+		a: "Rabies is rarely reported in opossums, but any mammal can contract it. The CDC says opossums rarely spread rabies and advises avoiding contact with wildlife. Don’t handle them. Hissing, drooling, and falling over stiff can be a normal threat display. A daytime animal that is confused, unafraid, or injured is a reason to keep people and pets away and call animal control or a rehabilitator — not to diagnose it yourself."
 	},
 	{
 		q: "Nothing has moved in.",
-		a: "They keep a circuit of dens and may use yours a few nights a month. That still counts. If a season passes with no rearranged leaves, add the brush pile, add water, and stop moving the box. They won’t commute across a bare lawn to reach it."
+		a: "A box is optional shelter. Whether anything uses it, and when, is unpredictable. An empty box is a normal outcome, not a failed schedule. Don’t keep moving it. Cover nearby may make the approach easier, and still guarantees nothing."
 	}
 ];
 var glossary = [
 	{
 		term: "Virginia opossum",
-		def: "North America’s native marsupial (Didelphis virginiana)."
+		def: "The only marsupial native to the United States and Canada (Didelphis virginiana)."
 	},
 	{
 		term: "Joey",
@@ -287,7 +287,7 @@ var glossary = [
 	},
 	{
 		term: "Relocate",
-		def: "Moving a wild animal; often illegal and harmful."
+		def: "Moving a wild animal. Whether that is allowed, and whether the animal survives it, depends on your state. Ask the wildlife agency before you try."
 	},
 	{
 		term: "Rehabilitator",
@@ -295,7 +295,7 @@ var glossary = [
 	},
 	{
 		term: "Blacklegged tick",
-		def: "The tick that can carry Lyme disease; mice amplify it more than opossums."
+		def: "A tick that can carry the bacterium that causes Lyme disease. A den box is not a control method for it."
 	},
 	{
 		term: "Passive housing",
@@ -308,8 +308,8 @@ var startSteps = [
 	"Build or buy a box with a ~5″ door — no food inside.",
 	"Site it in shade with cover, away from night dogs and the chicken coop.",
 	"Add a brush pile and clean water.",
-	"Leave it alone for two weeks.",
-	"Never keep, trap, or relocate wildlife."
+	"Leave it alone. Whether anything uses it, and when, is unpredictable.",
+	"Do not keep, trap, or relocate wildlife. Ask your state wildlife agency before you handle any."
 ];
 var initial = {
 	steps: {},
@@ -353,7 +353,7 @@ var NAV = [
 	},
 	{
 		href: "#why",
-		label: "The ticks"
+		label: "The claim"
 	},
 	{
 		href: "#tenant",
@@ -454,11 +454,11 @@ function GuideApp() {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 								className: "mt-3 font-display text-4xl font-semibold leading-tight text-ink sm:text-6xl",
-								children: "Build a den for the animal that works the night shift on ticks."
+								children: "Build a dry backyard den for Virginia opossums."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "mt-5 max-w-xl text-lg leading-relaxed text-ink/80",
-								children: "One Saturday, a half-sheet of plywood, and a low dark room. Virginia opossums won’t sterilize a yard. They will sleep somewhere safer than your soffit, and groom off a remarkable share of the ticks that try to feed on them."
+								children: "Opossums use a variety of shelters, and a box may offer another place to rest. It is not a dependable way to attract an opossum or reduce ticks in your yard."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "mt-6 flex flex-wrap gap-3",
@@ -513,11 +513,11 @@ function GuideApp() {
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "text-sm font-medium tracking-wide text-moss",
-							children: "01 — Why bother"
+							children: "01 — What a box is not"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							className: "mt-2 max-w-2xl font-display text-3xl font-semibold sm:text-4xl",
-							children: "Invite them. Don’t believe the meme."
+							children: "Shelter, not tick control."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-8 grid gap-4 md:grid-cols-3",
@@ -525,26 +525,26 @@ function GuideApp() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
 									icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Bug, { className: "size-5" }),
 									kicker: "The lab",
-									title: "About 96% failed to feed",
-									body: "In a 2009 study, researchers put 100 larval blacklegged ticks on captive opossums. Roughly 3.5 fed and dropped off. The rest were gone — groomed away, and presumed eaten."
+									title: "Five captive animals",
+									body: "In 2009, researchers put larval blacklegged ticks on five captive opossums. About 3.5 ticks per animal fell off after feeding. The missing ticks were assumed eaten. That study did not show that opossums regularly remove ticks in the wild."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
 									icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Moon, { className: "size-5" }),
-									kicker: "The meme",
-									title: "Not 5,000 a season, counted",
-									body: "The paper then estimated more than 5,500 larvae in a peak week, by math, from five animals in cages. A later look at wild stomachs did not find that feast. Quote the grooming. Skip the quota."
+									kicker: "Wild stomachs",
+									title: "No ticks found",
+									body: "A 2021 study found no ticks or tick parts in the stomachs of 32 wild Illinois opossums. The same paper reviewed 23 earlier diet studies. None of those found ticks either."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
 									icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TreePine, { className: "size-5" }),
 									kicker: "The yard",
-									title: "A dead end, not a vacuum",
-									body: "Mice amplify ticks and the Lyme bacterium. Opossums are poor reservoirs. A den adds that animal to the circuit. It does not replace tick checks, short play-lawn grass, or skipping poison bait."
+									title: "Other animals may come",
+									body: "Illinois Extension cautions that food and shelter left for opossums can also draw raccoons, feral cats, rats, mice, and other rodents. A den is not a tick program. Keep doing tick checks."
 								})
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-6 max-w-3xl text-sm leading-relaxed text-ink/70",
-							children: "Source: Keesing et al., 2009, “Hosts as ecological traps for the vector of Lyme disease,” Proceedings of the Royal Society B. Cary Institute interviews later rounded a seasonal figure near 5,000. A 2021 stomach survey of wild Illinois opossums is the reason this manual will not promise you a tick-free July."
+							children: "Sources: Keesing et al., 2009, Proceedings of the Royal Society B; “Are Virginia opossums really ecological traps for ticks?”, Ticks and Tick-borne Diseases, 2021; Christopher Enroth, Illinois Extension, June 14, 2024. The “5,000 ticks” figure is a projection from the lab assumption, not a count of ticks eaten outdoors."
 						})
 					]
 				}),
@@ -574,8 +574,8 @@ function GuideApp() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "mt-5 space-y-4 text-base leading-relaxed text-ink/80",
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "North America’s only marsupial. Cat-sized body, white face, pink nose, bare black ears, and a prehensile tail they use for balance — not for hanging asleep, which is mostly a myth. They are nocturnal, nomadic, and almost aggressively uninterested in a fight." }),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "A den is a hotel room on a circuit. Radio-tracking studies show them switching shelters every few days: hollow logs, brush, abandoned burrows, the space under a shed. Your box will not hold a permanent resident. A few nights a month, repeated across the season, is the result you want. That is how one animal covers the tick habitat instead of camping in it." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "The only marsupial native to the United States and Canada. Cat-sized body, white face, pink nose, bare black ears, and a prehensile tail they use for balance — not for hanging asleep, which is mostly a myth. They are nocturnal and usually avoid a fight." }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "They already use hollow logs, brush, abandoned burrows, and the space under a shed. A box is one more optional shelter. Whether anything uses it, and for how long, is unpredictable. A ground box is not proven to keep opossums out of attics or to stop them using other shelter." }),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "This plan is the wrong hole size for an Australian brushtail or ringtail. If you don’t have Virginia opossums — much of the Rockies and the high desert still doesn’t — lumber will not conjure them." })
 									]
 								})
@@ -612,7 +612,7 @@ function GuideApp() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-4 max-w-3xl leading-relaxed text-ink/80",
-							children: "Walls and floor from one 4×4 sheet of ¾″ exterior plywood. Roof and awning from a thinner 2×4 panel, so the heavy sheet still fits in a car. Nothing pressure-treated. Nothing painted inside. The wood is supposed to go gray."
+							children: "Walls and floor from one 4×4 sheet of ¾″ exterior plywood. Roof and awning from a thinner 2×4 panel, so the heavy sheet still fits in a car. Nothing pressure-treated. Nothing painted inside. The wood is supposed to go gray. A 5″ door does not select for opossums. Other animals about that size may use it too."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dl", {
 							className: "mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-bark/20 bg-bark/20 sm:grid-cols-4",
@@ -726,7 +726,7 @@ function GuideApp() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-4 max-w-3xl text-ink/80",
-							children: "Approximate materials cost for one DIY den: roughly $80–110 if you’re buying both panels, a cedar stick, and hardware. That figure is lumber and screws, not a price to unlock this guide. Less if the screw jar is already honest. A second den wants about 50 feet of distance — they’re solitary, except a mother with joeys."
+							children: "Approximate materials cost for one DIY den: roughly $80–110 if you’re buying both panels, a cedar stick, and hardware. That figure is lumber and screws, not a price to unlock this guide. Less if the screw jar is already honest. A second box is optional. There is no set spacing that makes two better than one, and either box may sit empty."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 							className: "mt-8 divide-y divide-bark/15 border-y border-bark/15",
@@ -869,18 +869,18 @@ function GuideApp() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 							className: "mt-2 font-display text-3xl font-semibold sm:text-4xl",
-							children: "What a working den looks like."
+							children: "If something uses it, you may not know when."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-8 grid gap-4 lg:grid-cols-3",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Callout, {
-									title: "Signs it’s used",
-									children: "Leaves rearranged or dragged to the lip. A faint musk, not sewage. Tracks with a hind foot that looks like a small hand — five toes, and a thumb that splays out. Red eyeshine if you sweep a light from far enough away to be polite."
+									title: "Possible signs",
+									children: "Leaves rearranged, a faint musk, or tracks with a hind foot that looks like a small hand. Those are clues, not a schedule. You may also see nothing. Red eyeshine, if you sweep a light from far enough away to stay back, is a reason to leave, not to investigate."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Callout, {
-									title: "When to open it",
-									children: "Once a year, a dry afternoon in January or February. Tap the roof at noon. If anything answers, leave it until spring. Gloves on, dump matted wet bedding, replace with dry leaves. No foggers, no bleach bombs. Spring and summer may mean a mother — do not open a quiet box “just to check” then."
+									title: "Leave it shut",
+									children: "Don’t open the box to see who is home. Tapping the roof does not tell you it is empty. If occupancy is uncertain, leave it closed. Ask your state wildlife agency or a licensed rehabilitator before you disturb an animal or a nest. No foggers and no bleach bombs."
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Callout, {
 									title: "If one plays dead",
@@ -892,12 +892,12 @@ function GuideApp() {
 							className: "mt-8 rounded-2xl bg-ink px-5 py-6 text-paper sm:px-8 sm:py-8",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 								className: "font-display text-2xl font-semibold",
-								children: "The rest of the tick plan"
+								children: "Yard habits that still matter"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 								className: "mt-4 grid gap-3 text-sm leading-relaxed text-paper/85 sm:grid-cols-2",
 								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Mow the lawn people actually play on. Let the fence line go messy." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Quit rodenticide. Secondary poisoning is how you lose the night shift." }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Mow the lawn people actually play on. A messy fence line is cover, not a tick plan." }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Skip rodenticide. An animal that eats a poisoned mouse can be poisoned too." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Shut the trash. An open can teaches the wrong address." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Close the chicken coop at dusk if you keep birds. See also Volume 26: Chickens — latch the coop every night." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A plant saucer of water, refreshed, beats any food you were considering." }),
@@ -946,7 +946,7 @@ function GuideApp() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-10 max-w-3xl text-sm leading-relaxed text-ink/60",
-							children: "Providing a nest box and messy cover is generally legal. Trapping, relocating, or keeping a wild opossum is regulated and often illegal. Wildlife rehabilitation requires a state permit. If you are not a licensed rehabilitator, do not raise orphans. Call one. Check your city, county, HOA, and state wildlife agency before you install dens or leave out water, in case local rules limit feeding or sheltering wildlife. Their rules win. This is passive housing, not wildlife control and not veterinary advice. If your state wildlife agency says otherwise, they win. Blue and the Awesome Dudes are not responsible for bites, ticks, property damage, or legal trouble. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect your name, email, or any personal information. Your build checklist is saved only on your own device."
+							children: "Providing a nest box is optional shelter, not a permit to handle wildlife. Rules for boxes, water, feeding, trapping, relocating, and keeping wild animals differ by city, county, HOA, and state. This guide cannot say what is legal where you live. Before you install a den, leave out water, touch an animal, or move one, ask your state wildlife agency. Wildlife rehabilitation requires whatever permit your state demands. If you are not a licensed rehabilitator, do not try to raise orphans — call one. This is not wildlife control and not veterinary advice. Blue and the Awesome Dudes are not responsible for bites, ticks, property damage, or legal trouble. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect your name, email, or any personal information. Your build checklist is saved only on your own device."
 						})
 					]
 				})

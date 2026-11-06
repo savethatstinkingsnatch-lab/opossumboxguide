@@ -131,7 +131,7 @@ export const buildSteps = [
   {
     id: "place",
     title: "Bed it, carry it, leave it",
-    body: "Two inches of dry oak leaves or straw. No cedar shavings, no fabric, no newspaper. Carry the den to the spot you picked — don’t build it in place unless you like working on your knees in the mud. Do not put food inside. Check the latch, walk away, and give it two weeks before you peek.",
+    body: "Two inches of dry oak leaves or straw. No cedar shavings, no fabric, no newspaper. Carry the den to the spot you picked — don’t build it in place unless you like working on your knees in the mud. Do not put food inside. Check the latch and leave it alone. Don’t open it later unless you know it is empty, and ask your state wildlife agency before you disturb an animal or a nest.",
   },
 ] as const;
 
@@ -201,7 +201,7 @@ export function siteAdvice(a: SiteAnswers): { title: string; place: string; note
 
   if (a.dogs === "yes") {
     notes.push(
-      "A dog out at night will empty this plan. Put the den beyond the fence, or wait until the dog sleeps indoors. A cornered opossum is a vet bill, not tick control.",
+      "A dog out at night can harass whatever uses the box. Put the den beyond the fence, or skip it until the dog sleeps indoors. Cornering wildlife risks a bite and a vet bill.",
     );
   } else if (a.dogs === "sometimes") {
     notes.push(
@@ -225,17 +225,21 @@ export function siteAdvice(a: SiteAnswers): { title: string; place: string; note
 
   if (a.distance === "garden") {
     notes.push(
-      "Fifteen to thirty feet from the beds is the useful distance. Their loop crosses the tick habitat, and they aren’t living under the porch.",
+      "Near the garden is a place, not a tick strategy. There is no distance from the beds that makes a box reduce ticks. Keep it off the porch if you don’t want animals at the door.",
     );
   } else if (a.distance === "far") {
-    notes.push("The back line is the right call. One den there beats three screwed to the house.");
+    notes.push(
+      "A back corner is a reasonable shaded spot. One box is enough to try. A second is optional, and neither comes with a spacing rule or a promise of use.",
+    );
   } else {
     notes.push(
-      "Either distance works. Closer and you’ll hear rustling. Farther and you’ll mostly notice the leaves they drag in.",
+      "Pick shade and cover. Closer and you might hear rustling. Farther and you might never know. Either way, use and timing are unpredictable.",
     );
   }
 
-  notes.push("No food in the box, ever. Kibble turns it into a raccoon diner and a rat station. Dry leaves are the whole welcome.");
+  notes.push(
+    "No food in the box. Illinois Extension notes that food and shelter left out for opossums can also draw raccoons, feral cats, rats, mice, and other rodents. Dry leaves are bedding, not bait.",
+  );
 
   const blocked = a.dogs === "yes" || a.cover === "none";
   return {
@@ -248,19 +252,19 @@ export function siteAdvice(a: SiteAnswers): { title: string; place: string; note
 export const faqs = [
   {
     q: "Will this get rid of the ticks?",
-    a: "No box eliminates them. Mice are the animals that amplify blacklegged ticks and the Lyme bacterium. Opossums are poor hosts by comparison: in a 2009 lab study they groomed off nearly all the larval ticks placed on them. A later look at wild stomachs did not find the piles of ticks the meme promised, so treat “5,000 ticks” as a projection, not a quota. What you can count on is a native night animal that is a dead end for many of the ticks that climb aboard, plus a taste for slugs, snails, and beetles. Keep mowing the play lawn and keep doing tick checks.",
+    a: "No. A den is not a dependable way to reduce ticks or to attract an opossum. In 2009, researchers put ticks on five captive opossums. About 3.5 ticks per animal fell off after feeding, and the missing ticks were assumed eaten. A 2021 study found no ticks or tick parts in the stomachs of 32 wild Illinois opossums, and 23 earlier diet studies found none either. Illinois Extension also cautions that food and shelter set out for opossums can draw other wildlife. Keep mowing play areas and keep doing tick checks.",
   },
   {
     q: "How is the famous number wrong?",
-    a: "Keesing and colleagues put 100 larval ticks on captive opossums. About 3.5 of them fed and dropped off; the rest were missing and presumed groomed away. Working backward from wild tick counts, they estimated an opossum might destroy more than 5,500 larvae in a peak week. Interviews rounded a season figure near 5,000. The meme picked whichever version sounded round. The grooming result is real. The weekly total is math, done on five animals, in a cage.",
+    a: "Keesing and colleagues worked with five captive opossums. On average about 3.5 ticks per animal dropped off after feeding. The researchers assumed the missing ticks had been eaten. They did not establish that wild opossums regularly remove ticks. The estimate of more than 5,500 larval ticks in a peak week is math built on that assumption, not a count of ticks eaten outdoors.",
   },
   {
     q: "A raccoon moved in.",
-    a: "A 5″ hole also fits a small raccoon. You still have a nocturnal grub-eater, with worse manners. Don’t trap it — relocation is illegal in a lot of states and usually fatal for the animal. Skip food, keep trash shut, and the den stays a den instead of a feeding station. Making the hole bigger will not improve the situation.",
+    a: "This design does not selectively admit opossums. A 5″ hole can fit a small raccoon and other animals of similar size. Do not trap or relocate them on your own. Whether that is legal depends on your state — ask the wildlife agency before you try. Skip food, keep trash shut, and don’t enlarge the hole.",
   },
   {
     q: "Will they move into the attic?",
-    a: "Attics happen because of a gap in the house, not because you offered a better room outside. A ground den is the alternative to the soffit. Cap the chimney and screen the vents anyway. If one is already inside, call a wildlife control operator who excludes and doesn’t poison.",
+    a: "A ground box is not proven to keep opossums out of attics or to stop them using other shelter. An attic animal is there because of a gap in the house. Cap the chimney and screen the vents. If one is already inside, call someone who excludes without poison, and check what your state allows.",
   },
   {
     q: "Can I put out cat food so they find it?",
@@ -268,22 +272,22 @@ export const faqs = [
   },
   {
     q: "I found babies.",
-    a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods. Licensed rehabbers exist for a reason. Keeping joeys without a permit is illegal in most places and often kills them.",
+    a: "Joeys can fall from the mother’s back. If a young animal is injured, clearly separated, or its mother is dead, contact a licensed wildlife rehabilitator promptly. Wisconsin DNR advises that call for an injured or very small opossum. Do not feed or handle it unless the rehabilitator tells you to. Do not try to raise it. What a permit allows depends on your state.",
   },
   {
     q: "Do they carry rabies?",
-    a: "Rarely. Their body temperature makes rabies uncommon, not impossible. Any mammal behaving oddly gets distance, not a photo. They hiss, drool, and sometimes fall over stiff when threatened — that threat display is normal. A daytime animal that is confused, unafraid, or injured is a reason to call animal control, not to diagnose it yourself.",
+    a: "Rabies is rarely reported in opossums, but any mammal can contract it. The CDC says opossums rarely spread rabies and advises avoiding contact with wildlife. Don’t handle them. Hissing, drooling, and falling over stiff can be a normal threat display. A daytime animal that is confused, unafraid, or injured is a reason to keep people and pets away and call animal control or a rehabilitator — not to diagnose it yourself.",
   },
   {
     q: "Nothing has moved in.",
-    a: "They keep a circuit of dens and may use yours a few nights a month. That still counts. If a season passes with no rearranged leaves, add the brush pile, add water, and stop moving the box. They won’t commute across a bare lawn to reach it.",
+    a: "A box is optional shelter. Whether anything uses it, and when, is unpredictable. An empty box is a normal outcome, not a failed schedule. Don’t keep moving it. Cover nearby may make the approach easier, and still guarantees nothing.",
   },
 ] as const;
 
 export const glossary = [
   {
     term: "Virginia opossum",
-    def: "North America’s native marsupial (Didelphis virginiana).",
+    def: "The only marsupial native to the United States and Canada (Didelphis virginiana).",
   },
   {
     term: "Joey",
@@ -299,7 +303,7 @@ export const glossary = [
   },
   {
     term: "Relocate",
-    def: "Moving a wild animal; often illegal and harmful.",
+    def: "Moving a wild animal. Whether that is allowed, and whether the animal survives it, depends on your state. Ask the wildlife agency before you try.",
   },
   {
     term: "Rehabilitator",
@@ -307,7 +311,7 @@ export const glossary = [
   },
   {
     term: "Blacklegged tick",
-    def: "The tick that can carry Lyme disease; mice amplify it more than opossums.",
+    def: "A tick that can carry the bacterium that causes Lyme disease. A den box is not a control method for it.",
   },
   {
     term: "Passive housing",
@@ -321,6 +325,6 @@ export const startSteps = [
   "Build or buy a box with a ~5″ door — no food inside.",
   "Site it in shade with cover, away from night dogs and the chicken coop.",
   "Add a brush pile and clean water.",
-  "Leave it alone for two weeks.",
-  "Never keep, trap, or relocate wildlife.",
+  "Leave it alone. Whether anything uses it, and when, is unpredictable.",
+  "Do not keep, trap, or relocate wildlife. Ask your state wildlife agency before you handle any.",
 ] as const;

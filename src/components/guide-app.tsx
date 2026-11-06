@@ -32,7 +32,7 @@ import { useProgress } from "@/store/progress";
 
 const NAV = [
   { href: "#start", label: "Start" },
-  { href: "#why", label: "The ticks" },
+  { href: "#why", label: "The claim" },
   { href: "#tenant", label: "The tenant" },
   { href: "#plan", label: "The den" },
   { href: "#shop", label: "Shop" },
@@ -87,12 +87,11 @@ export function GuideApp() {
           <div className="lg:col-span-6">
             <p className="text-sm font-medium tracking-wide text-moss">Field manual</p>
             <h1 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink sm:text-6xl">
-              Build a den for the animal that works the night shift on ticks.
+              Build a dry backyard den for Virginia opossums.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink/80">
-              One Saturday, a half-sheet of plywood, and a low dark room. Virginia opossums
-              won’t sterilize a yard. They will sleep somewhere safer than your soffit, and
-              groom off a remarkable share of the ticks that try to feed on them.
+              Opossums use a variety of shelters, and a box may offer another place to rest. It
+              is not a dependable way to attract an opossum or reduce ticks in your yard.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -137,35 +136,35 @@ export function GuideApp() {
         </section>
 
         <section id="why" className="scroll-mt-24 border-t border-bark/15 py-14">
-          <p className="text-sm font-medium tracking-wide text-moss">01 — Why bother</p>
+          <p className="text-sm font-medium tracking-wide text-moss">01 — What a box is not</p>
           <h2 className="mt-2 max-w-2xl font-display text-3xl font-semibold sm:text-4xl">
-            Invite them. Don’t believe the meme.
+            Shelter, not tick control.
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <Fact
               icon={<Bug className="size-5" />}
               kicker="The lab"
-              title="About 96% failed to feed"
-              body="In a 2009 study, researchers put 100 larval blacklegged ticks on captive opossums. Roughly 3.5 fed and dropped off. The rest were gone — groomed away, and presumed eaten."
+              title="Five captive animals"
+              body="In 2009, researchers put larval blacklegged ticks on five captive opossums. About 3.5 ticks per animal fell off after feeding. The missing ticks were assumed eaten. That study did not show that opossums regularly remove ticks in the wild."
             />
             <Fact
               icon={<Moon className="size-5" />}
-              kicker="The meme"
-              title="Not 5,000 a season, counted"
-              body="The paper then estimated more than 5,500 larvae in a peak week, by math, from five animals in cages. A later look at wild stomachs did not find that feast. Quote the grooming. Skip the quota."
+              kicker="Wild stomachs"
+              title="No ticks found"
+              body="A 2021 study found no ticks or tick parts in the stomachs of 32 wild Illinois opossums. The same paper reviewed 23 earlier diet studies. None of those found ticks either."
             />
             <Fact
               icon={<TreePine className="size-5" />}
               kicker="The yard"
-              title="A dead end, not a vacuum"
-              body="Mice amplify ticks and the Lyme bacterium. Opossums are poor reservoirs. A den adds that animal to the circuit. It does not replace tick checks, short play-lawn grass, or skipping poison bait."
+              title="Other animals may come"
+              body="Illinois Extension cautions that food and shelter left for opossums can also draw raccoons, feral cats, rats, mice, and other rodents. A den is not a tick program. Keep doing tick checks."
             />
           </div>
           <p className="mt-6 max-w-3xl text-sm leading-relaxed text-ink/70">
-            Source: Keesing et al., 2009, “Hosts as ecological traps for the vector of Lyme
-            disease,” Proceedings of the Royal Society B. Cary Institute interviews later
-            rounded a seasonal figure near 5,000. A 2021 stomach survey of wild Illinois
-            opossums is the reason this manual will not promise you a tick-free July.
+            Sources: Keesing et al., 2009, Proceedings of the Royal Society B; “Are Virginia
+            opossums really ecological traps for ticks?”, Ticks and Tick-borne Diseases, 2021;
+            Christopher Enroth, Illinois Extension, June 14, 2024. The “5,000 ticks” figure is a
+            projection from the lab assumption, not a count of ticks eaten outdoors.
           </p>
         </section>
 
@@ -185,17 +184,16 @@ export function GuideApp() {
               </h2>
               <div className="mt-5 space-y-4 text-base leading-relaxed text-ink/80">
                 <p>
-                  North America’s only marsupial. Cat-sized body, white face, pink nose,
-                  bare black ears, and a prehensile tail they use for balance — not for
-                  hanging asleep, which is mostly a myth. They are nocturnal, nomadic, and
-                  almost aggressively uninterested in a fight.
+                  The only marsupial native to the United States and Canada. Cat-sized body,
+                  white face, pink nose, bare black ears, and a prehensile tail they use for
+                  balance — not for hanging asleep, which is mostly a myth. They are nocturnal
+                  and usually avoid a fight.
                 </p>
                 <p>
-                  A den is a hotel room on a circuit. Radio-tracking studies show them
-                  switching shelters every few days: hollow logs, brush, abandoned burrows,
-                  the space under a shed. Your box will not hold a permanent resident. A few
-                  nights a month, repeated across the season, is the result you want. That
-                  is how one animal covers the tick habitat instead of camping in it.
+                  They already use hollow logs, brush, abandoned burrows, and the space under a
+                  shed. A box is one more optional shelter. Whether anything uses it, and for
+                  how long, is unpredictable. A ground box is not proven to keep opossums out of
+                  attics or to stop them using other shelter.
                 </p>
                 <p>
                   This plan is the wrong hole size for an Australian brushtail or ringtail.
@@ -231,7 +229,8 @@ export function GuideApp() {
           <p className="mt-4 max-w-3xl leading-relaxed text-ink/80">
             Walls and floor from one 4×4 sheet of ¾″ exterior plywood. Roof and awning from
             a thinner 2×4 panel, so the heavy sheet still fits in a car. Nothing
-            pressure-treated. Nothing painted inside. The wood is supposed to go gray.
+            pressure-treated. Nothing painted inside. The wood is supposed to go gray. A 5″
+            door does not select for opossums. Other animals about that size may use it too.
           </p>
 
           <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-bark/20 bg-bark/20 sm:grid-cols-4">
@@ -310,8 +309,9 @@ export function GuideApp() {
           <p className="mt-4 max-w-3xl text-ink/80">
             Approximate materials cost for one DIY den: roughly $80–110 if you’re buying both
             panels, a cedar stick, and hardware. That figure is lumber and screws, not a price
-            to unlock this guide. Less if the screw jar is already honest. A second den wants
-            about 50 feet of distance — they’re solitary, except a mother with joeys.
+            to unlock this guide. Less if the screw jar is already honest. A second box is
+            optional. There is no set spacing that makes two better than one, and either box
+            may sit empty.
           </p>
           <ul className="mt-8 divide-y divide-bark/15 border-y border-bark/15">
             {shoppingList(boxes).map((line) => (
@@ -410,19 +410,20 @@ export function GuideApp() {
         <section id="keep" className="scroll-mt-24 border-t border-bark/15 py-14">
           <p className="text-sm font-medium tracking-wide text-moss">07 — After</p>
           <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
-            What a working den looks like.
+            If something uses it, you may not know when.
           </h2>
           <div className="mt-8 grid gap-4 lg:grid-cols-3">
-            <Callout title="Signs it’s used">
-              Leaves rearranged or dragged to the lip. A faint musk, not sewage. Tracks with
-              a hind foot that looks like a small hand — five toes, and a thumb that splays
-              out. Red eyeshine if you sweep a light from far enough away to be polite.
+            <Callout title="Possible signs">
+              Leaves rearranged, a faint musk, or tracks with a hind foot that looks like a
+              small hand. Those are clues, not a schedule. You may also see nothing. Red
+              eyeshine, if you sweep a light from far enough away to stay back, is a reason to
+              leave, not to investigate.
             </Callout>
-            <Callout title="When to open it">
-              Once a year, a dry afternoon in January or February. Tap the roof at noon. If
-              anything answers, leave it until spring. Gloves on, dump matted wet bedding,
-              replace with dry leaves. No foggers, no bleach bombs. Spring and summer may
-              mean a mother — do not open a quiet box “just to check” then.
+            <Callout title="Leave it shut">
+              Don’t open the box to see who is home. Tapping the roof does not tell you it is
+              empty. If occupancy is uncertain, leave it closed. Ask your state wildlife agency
+              or a licensed rehabilitator before you disturb an animal or a nest. No foggers
+              and no bleach bombs.
             </Callout>
             <Callout title="If one plays dead">
               Leave it. The act can last minutes or longer, and people have buried animals
@@ -432,10 +433,10 @@ export function GuideApp() {
           </div>
 
           <div className="mt-8 rounded-2xl bg-ink px-5 py-6 text-paper sm:px-8 sm:py-8">
-            <h3 className="font-display text-2xl font-semibold">The rest of the tick plan</h3>
+            <h3 className="font-display text-2xl font-semibold">Yard habits that still matter</h3>
             <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-paper/85 sm:grid-cols-2">
-              <li>Mow the lawn people actually play on. Let the fence line go messy.</li>
-              <li>Quit rodenticide. Secondary poisoning is how you lose the night shift.</li>
+              <li>Mow the lawn people actually play on. A messy fence line is cover, not a tick plan.</li>
+              <li>Skip rodenticide. An animal that eats a poisoned mouse can be poisoned too.</li>
               <li>Shut the trash. An open can teaches the wrong address.</li>
               <li>
                 Close the chicken coop at dusk if you keep birds. See also Volume 26: Chickens —
@@ -474,17 +475,17 @@ export function GuideApp() {
           </div>
 
           <p className="mt-10 max-w-3xl text-sm leading-relaxed text-ink/60">
-            Providing a nest box and messy cover is generally legal. Trapping, relocating, or
-            keeping a wild opossum is regulated and often illegal. Wildlife rehabilitation
-            requires a state permit. If you are not a licensed rehabilitator, do not raise
-            orphans. Call one. Check your city, county, HOA, and state wildlife agency before
-            you install dens or leave out water, in case local rules limit feeding or sheltering
-            wildlife. Their rules win. This is passive housing, not wildlife control and not
-            veterinary advice. If your state wildlife agency says otherwise, they win. Blue and
-            the Awesome Dudes are not responsible for bites, ticks, property damage, or legal
-            trouble. Part of The Education Revolution pocket guide series. Privacy: This guide
-            does not collect your name, email, or any personal information. Your build checklist
-            is saved only on your own device.
+            Providing a nest box is optional shelter, not a permit to handle wildlife. Rules
+            for boxes, water, feeding, trapping, relocating, and keeping wild animals differ
+            by city, county, HOA, and state. This guide cannot say what is legal where you
+            live. Before you install a den, leave out water, touch an animal, or move one, ask
+            your state wildlife agency. Wildlife rehabilitation requires whatever permit your
+            state demands. If you are not a licensed rehabilitator, do not try to raise
+            orphans — call one. This is not wildlife control and not veterinary advice. Blue
+            and the Awesome Dudes are not responsible for bites, ticks, property damage, or
+            legal trouble. Part of The Education Revolution pocket guide series. Privacy: This
+            guide does not collect your name, email, or any personal information. Your build
+            checklist is saved only on your own device.
           </p>
         </section>
       </main>

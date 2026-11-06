@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A field manual for building a low wooden den that gives Virginia opossums a dry place to sleep — and a reason to work the ticks in your yard.",
+          "A field manual for a dry backyard den box Virginia opossums may use as extra shelter. It is not a dependable way to attract an opossum or reduce ticks.",
       },
       { name: "theme-color", content: "#f4ebd8" },
     ],
