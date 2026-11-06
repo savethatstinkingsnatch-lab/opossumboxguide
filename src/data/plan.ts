@@ -211,7 +211,7 @@ export function siteAdvice(a: SiteAnswers): { title: string; place: string; note
 
   if (a.poultry === "yes") {
     notes.push(
-      "Opposite end of the property from the coop, and close the birds in before dark. Opossums are occasional egg thieves. An open coop is how a helpful neighbor becomes a problem.",
+      "Opposite end of the property from the coop, and close the birds in before dark. Opossums are occasional egg thieves. An open coop is how a helpful neighbor becomes a problem. See also Volume 26: Chickens — latch the coop every night.",
     );
   }
 
@@ -268,7 +268,7 @@ export const faqs = [
   },
   {
     q: "I found babies.",
-    a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods.",
+    a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods. Licensed rehabbers exist for a reason. Keeping joeys without a permit is illegal in most places and often kills them.",
   },
   {
     q: "Do they carry rabies?",
@@ -278,4 +278,49 @@ export const faqs = [
     q: "Nothing has moved in.",
     a: "They keep a circuit of dens and may use yours a few nights a month. That still counts. If a season passes with no rearranged leaves, add the brush pile, add water, and stop moving the box. They won’t commute across a bare lawn to reach it.",
   },
+] as const;
+
+export const glossary = [
+  {
+    term: "Virginia opossum",
+    def: "North America’s native marsupial (Didelphis virginiana).",
+  },
+  {
+    term: "Joey",
+    def: "A baby opossum.",
+  },
+  {
+    term: "Den box / nest box",
+    def: "Optional shelter you provide; not a cage.",
+  },
+  {
+    term: "Playing dead",
+    def: "A fear response (thanatosis), not sleep.",
+  },
+  {
+    term: "Relocate",
+    def: "Moving a wild animal; often illegal and harmful.",
+  },
+  {
+    term: "Rehabilitator",
+    def: "A permitted person who cares for injured or orphaned wildlife.",
+  },
+  {
+    term: "Blacklegged tick",
+    def: "The tick that can carry Lyme disease; mice amplify it more than opossums.",
+  },
+  {
+    term: "Passive housing",
+    def: "Offering habitat without trapping or feeding.",
+  },
+] as const;
+
+export const startSteps = [
+  "Confirm Virginia opossums live in your area.",
+  "Read local wildlife rules.",
+  "Build or buy a box with a ~5″ door — no food inside.",
+  "Site it in shade with cover, away from night dogs and the chicken coop.",
+  "Add a brush pile and clean water.",
+  "Leave it alone for two weeks.",
+  "Never keep, trap, or relocate wildlife.",
 ] as const;

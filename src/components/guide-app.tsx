@@ -22,19 +22,23 @@ import {
   buildSteps,
   cuts,
   faqs,
+  glossary,
   roofCuts,
   shoppingList,
   siteAdvice,
+  startSteps,
 } from "@/data/plan";
 import { useProgress } from "@/store/progress";
 
 const NAV = [
+  { href: "#start", label: "Start" },
   { href: "#why", label: "The ticks" },
   { href: "#tenant", label: "The tenant" },
   { href: "#plan", label: "The den" },
   { href: "#shop", label: "Shop" },
   { href: "#build", label: "Build" },
   { href: "#site", label: "Where" },
+  { href: "#glossary", label: "Glossary" },
   { href: "#keep", label: "After" },
 ];
 
@@ -55,10 +59,14 @@ export function GuideApp() {
     <div className="min-h-screen bg-paper text-ink">
       <header className="no-print sticky top-0 z-30 border-b border-bark/15 bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <a href="#top" className="font-display text-lg font-semibold tracking-tight">
-            Hollow Home
+          <a href="#top" className="min-w-0 max-w-xs sm:max-w-sm">
+            <span className="block font-display text-lg font-semibold tracking-tight">Hollow Home</span>
+            <span className="mt-0.5 block text-xs leading-snug text-ink/70">
+              The Education Revolution Pocket Guide, Volume 28: Opossum Boxes
+            </span>
+            <span className="block text-xs text-ink/60">by Blue and the Awesome Dudes</span>
           </a>
-          <nav className="hidden items-center gap-5 text-sm text-ink/70 md:flex">
+          <nav className="hidden flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm text-ink/70 md:flex">
             {NAV.map((item) => (
               <a key={item.href} href={item.href} className="transition-colors hover:text-ink">
                 {item.label}
@@ -111,6 +119,21 @@ export function GuideApp() {
               Door low, roof shedding away from the hole, cover on at least one side.
             </figcaption>
           </figure>
+        </section>
+
+        <section id="start" className="scroll-mt-24 border-t border-bark/15 py-14">
+          <p className="text-sm font-medium tracking-wide text-moss">Start here</p>
+          <h2 className="mt-2 max-w-2xl font-display text-3xl font-semibold sm:text-4xl">
+            Want a den box?
+          </h2>
+          <ol className="mt-6 max-w-3xl list-decimal space-y-3 pl-5 text-base leading-relaxed text-ink/85">
+            {startSteps.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+          <p className="mt-4 text-sm text-ink/70">
+            See also Volume 26: Chickens — latch the coop every night.
+          </p>
         </section>
 
         <section id="why" className="scroll-mt-24 border-t border-bark/15 py-14">
@@ -182,6 +205,22 @@ export function GuideApp() {
               </div>
             </div>
           </div>
+          <aside className="mt-8 rounded-2xl border border-clay/40 bg-clay/10 p-5 sm:p-6">
+            <h3 className="font-display text-xl font-semibold">Hands off</h3>
+            <ul className="mt-3 max-w-3xl list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink/85">
+              <li>Do not handle, chase, corner, or pick up a wild opossum.</li>
+              <li>Give them an exit. Dogs that pin wildlife create bites and vet bills.</li>
+              <li>
+                Hissing, drooling, and falling over stiff (“playing dead”) are normal fear
+                responses, not an invitation to poke them.
+              </li>
+              <li>
+                A confused, unafraid, or injured animal in daylight: keep people and pets away
+                and call animal control or a licensed rehabilitator.
+              </li>
+              <li>Wash hands after touching the empty box or bedding. Do a tick check after yard work.</li>
+            </ul>
+          </aside>
         </section>
 
         <section id="plan" className="scroll-mt-24 border-t border-bark/15 py-14">
@@ -263,15 +302,16 @@ export function GuideApp() {
             <div>
               <p className="text-sm font-medium tracking-wide text-moss">04 — Shop</p>
               <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
-                Usually under a hundred dollars.
+                Approximate materials cost for one DIY den
               </h2>
             </div>
             <BoxStepper />
           </div>
           <p className="mt-4 max-w-3xl text-ink/80">
-            Plan on roughly $80–110 for one den if you’re buying both panels, a cedar stick,
-            and hardware. Less if the screw jar is already honest. A second den wants about
-            50 feet of distance — they’re solitary, except a mother with joeys.
+            Approximate materials cost for one DIY den: roughly $80–110 if you’re buying both
+            panels, a cedar stick, and hardware. That figure is lumber and screws, not a price
+            to unlock this guide. Less if the screw jar is already honest. A second den wants
+            about 50 feet of distance — they’re solitary, except a mother with joeys.
           </p>
           <ul className="mt-8 divide-y divide-bark/15 border-y border-bark/15">
             {shoppingList(boxes).map((line) => (
@@ -397,7 +437,10 @@ export function GuideApp() {
               <li>Mow the lawn people actually play on. Let the fence line go messy.</li>
               <li>Quit rodenticide. Secondary poisoning is how you lose the night shift.</li>
               <li>Shut the trash. An open can teaches the wrong address.</li>
-              <li>Close the chicken coop at dusk if you keep birds.</li>
+              <li>
+                Close the chicken coop at dusk if you keep birds. See also Volume 26: Chickens —
+                latch the coop every night.
+              </li>
               <li>A plant saucer of water, refreshed, beats any food you were considering.</li>
               <li>Tick checks still happen. Permethrin on clothes, not on the opossum.</li>
             </ul>
@@ -418,11 +461,30 @@ export function GuideApp() {
             </div>
           </div>
 
+          <div id="glossary" className="mt-12 scroll-mt-24">
+            <h3 className="font-display text-2xl font-semibold">Glossary</h3>
+            <dl className="mt-4 divide-y divide-bark/15 border-y border-bark/15">
+              {glossary.map((entry) => (
+                <div key={entry.term} className="grid gap-1 py-4 sm:grid-cols-12 sm:gap-4">
+                  <dt className="font-medium sm:col-span-4">{entry.term}</dt>
+                  <dd className="text-sm leading-relaxed text-ink/75 sm:col-span-8">{entry.def}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
           <p className="mt-10 max-w-3xl text-sm leading-relaxed text-ink/60">
-            Providing a nest box and some messy cover is generally legal. Trapping, relocating,
-            or keeping a wild opossum is regulated and often illegal. This is passive housing,
-            not wildlife control and not veterinary advice. If your state wildlife agency says
-            otherwise, they win.
+            Providing a nest box and messy cover is generally legal. Trapping, relocating, or
+            keeping a wild opossum is regulated and often illegal. Wildlife rehabilitation
+            requires a state permit. If you are not a licensed rehabilitator, do not raise
+            orphans. Call one. Check your city, county, HOA, and state wildlife agency before
+            you install dens or leave out water, in case local rules limit feeding or sheltering
+            wildlife. Their rules win. This is passive housing, not wildlife control and not
+            veterinary advice. If your state wildlife agency says otherwise, they win. Blue and
+            the Awesome Dudes are not responsible for bites, ticks, property damage, or legal
+            trouble. Part of The Education Revolution pocket guide series. Privacy: This guide
+            does not collect your name, email, or any personal information. Your build checklist
+            is saved only on your own device.
           </p>
         </section>
       </main>

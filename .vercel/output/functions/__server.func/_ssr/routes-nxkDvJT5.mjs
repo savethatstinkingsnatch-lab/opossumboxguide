@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Plus, c as Hammer, d as Bug, i as Printer, l as ChevronDown, n as TreePine, o as Moon, r as RotateCcw, s as Minus, u as Check } from "../_libs/lucide-react.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B13MuRlD.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-nxkDvJT5.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var hero_default = "/assets/hero-t-O7gv0X.jpg";
@@ -221,7 +221,7 @@ function siteAdvice(a) {
 	else if (a.cover === "woodpile") place = "At the end of the woodpile, not inside it. You want the tenant in the box, not between the logs you’re about to carry.";
 	if (a.dogs === "yes") notes.push("A dog out at night will empty this plan. Put the den beyond the fence, or wait until the dog sleeps indoors. A cornered opossum is a vet bill, not tick control.");
 	else if (a.dogs === "sometimes") notes.push("Give them a brushy exit. Don’t set the door facing a wall the dog can pin them against.");
-	if (a.poultry === "yes") notes.push("Opposite end of the property from the coop, and close the birds in before dark. Opossums are occasional egg thieves. An open coop is how a helpful neighbor becomes a problem.");
+	if (a.poultry === "yes") notes.push("Opposite end of the property from the coop, and close the birds in before dark. Opossums are occasional egg thieves. An open coop is how a helpful neighbor becomes a problem. See also Volume 26: Chickens — latch the coop every night.");
 	if (a.drainage === "pools") notes.push("Set the runners up on four bricks. Don’t site it in the swale, even then. Wet bedding is an empty box.");
 	else notes.push("Your ground already drains. The cedar runners are enough — no bricks required.");
 	if (a.distance === "garden") notes.push("Fifteen to thirty feet from the beds is the useful distance. Their loop crosses the tick habitat, and they aren’t living under the porch.");
@@ -257,7 +257,7 @@ var faqs = [
 	},
 	{
 		q: "I found babies.",
-		a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods."
+		a: "Close the lid. Mothers leave joeys in the den while they forage, and the joeys are not abandoned. If you are looking at a dead adult with living young, or infants that are cold and alone through a full day, call a licensed wildlife rehabilitator. Don’t bottle-feed, don’t keep them, and don’t drive them to a “nicer” woods. Licensed rehabbers exist for a reason. Keeping joeys without a permit is illegal in most places and often kills them."
 	},
 	{
 		q: "Do they carry rabies?",
@@ -267,6 +267,49 @@ var faqs = [
 		q: "Nothing has moved in.",
 		a: "They keep a circuit of dens and may use yours a few nights a month. That still counts. If a season passes with no rearranged leaves, add the brush pile, add water, and stop moving the box. They won’t commute across a bare lawn to reach it."
 	}
+];
+var glossary = [
+	{
+		term: "Virginia opossum",
+		def: "North America’s native marsupial (Didelphis virginiana)."
+	},
+	{
+		term: "Joey",
+		def: "A baby opossum."
+	},
+	{
+		term: "Den box / nest box",
+		def: "Optional shelter you provide; not a cage."
+	},
+	{
+		term: "Playing dead",
+		def: "A fear response (thanatosis), not sleep."
+	},
+	{
+		term: "Relocate",
+		def: "Moving a wild animal; often illegal and harmful."
+	},
+	{
+		term: "Rehabilitator",
+		def: "A permitted person who cares for injured or orphaned wildlife."
+	},
+	{
+		term: "Blacklegged tick",
+		def: "The tick that can carry Lyme disease; mice amplify it more than opossums."
+	},
+	{
+		term: "Passive housing",
+		def: "Offering habitat without trapping or feeding."
+	}
+];
+var startSteps = [
+	"Confirm Virginia opossums live in your area.",
+	"Read local wildlife rules.",
+	"Build or buy a box with a ~5″ door — no food inside.",
+	"Site it in shade with cover, away from night dogs and the chicken coop.",
+	"Add a brush pile and clean water.",
+	"Leave it alone for two weeks.",
+	"Never keep, trap, or relocate wildlife."
 ];
 var initial = {
 	steps: {},
@@ -305,6 +348,10 @@ var useProgress = create()(persist((set) => ({
 }));
 var NAV = [
 	{
+		href: "#start",
+		label: "Start"
+	},
+	{
 		href: "#why",
 		label: "The ticks"
 	},
@@ -329,6 +376,10 @@ var NAV = [
 		label: "Where"
 	},
 	{
+		href: "#glossary",
+		label: "Glossary"
+	},
+	{
 		href: "#keep",
 		label: "After"
 	}
@@ -350,13 +401,26 @@ function GuideApp() {
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 						href: "#top",
-						className: "font-display text-lg font-semibold tracking-tight",
-						children: "Hollow Home"
+						className: "min-w-0 max-w-xs sm:max-w-sm",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "block font-display text-lg font-semibold tracking-tight",
+								children: "Hollow Home"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "mt-0.5 block text-xs leading-snug text-ink/70",
+								children: "The Education Revolution Pocket Guide, Volume 28: Opossum Boxes"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								className: "block text-xs text-ink/60",
+								children: "by Blue and the Awesome Dudes"
+							})
+						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-						className: "hidden items-center gap-5 text-sm text-ink/70 md:flex",
+						className: "hidden flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm text-ink/70 md:flex",
 						children: NAV.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: item.href,
 							className: "transition-colors hover:text-ink",
@@ -422,6 +486,28 @@ function GuideApp() {
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+					id: "start",
+					className: "scroll-mt-24 border-t border-bark/15 py-14",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-sm font-medium tracking-wide text-moss",
+							children: "Start here"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "mt-2 max-w-2xl font-display text-3xl font-semibold sm:text-4xl",
+							children: "Want a den box?"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+							className: "mt-6 max-w-3xl list-decimal space-y-3 pl-5 text-base leading-relaxed text-ink/85",
+							children: startSteps.map((step) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: step }, step))
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-4 text-sm text-ink/70",
+							children: "See also Volume 26: Chickens — latch the coop every night."
+						})
+					]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 					id: "why",
 					className: "scroll-mt-24 border-t border-bark/15 py-14",
 					children: [
@@ -462,10 +548,10 @@ function GuideApp() {
 						})
 					]
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 					id: "tenant",
 					className: "scroll-mt-24 border-t border-bark/15 py-14",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "grid items-center gap-8 lg:grid-cols-12",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("figure", {
 							className: "lg:col-span-5",
@@ -495,7 +581,22 @@ function GuideApp() {
 								})
 							]
 						})]
-					})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("aside", {
+						className: "mt-8 rounded-2xl border border-clay/40 bg-clay/10 p-5 sm:p-6",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							className: "font-display text-xl font-semibold",
+							children: "Hands off"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+							className: "mt-3 max-w-3xl list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink/85",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Do not handle, chase, corner, or pick up a wild opossum." }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Give them an exit. Dogs that pin wildlife create bites and vet bills." }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Hissing, drooling, and falling over stiff (“playing dead”) are normal fear responses, not an invitation to poke them." }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A confused, unafraid, or injured animal in daylight: keep people and pets away and call animal control or a licensed rehabilitator." }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Wash hands after touching the empty box or bedding. Do a tick check after yard work." })
+							]
+						})]
+					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 					id: "plan",
@@ -620,12 +721,12 @@ function GuideApp() {
 								children: "04 — Shop"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 								className: "mt-2 font-display text-3xl font-semibold sm:text-4xl",
-								children: "Usually under a hundred dollars."
+								children: "Approximate materials cost for one DIY den"
 							})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BoxStepper, {})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-4 max-w-3xl text-ink/80",
-							children: "Plan on roughly $80–110 for one den if you’re buying both panels, a cedar stick, and hardware. Less if the screw jar is already honest. A second den wants about 50 feet of distance — they’re solitary, except a mother with joeys."
+							children: "Approximate materials cost for one DIY den: roughly $80–110 if you’re buying both panels, a cedar stick, and hardware. That figure is lumber and screws, not a price to unlock this guide. Less if the screw jar is already honest. A second den wants about 50 feet of distance — they’re solitary, except a mother with joeys."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 							className: "mt-8 divide-y divide-bark/15 border-y border-bark/15",
@@ -798,7 +899,7 @@ function GuideApp() {
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Mow the lawn people actually play on. Let the fence line go messy." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Quit rodenticide. Secondary poisoning is how you lose the night shift." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Shut the trash. An open can teaches the wrong address." }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Close the chicken coop at dusk if you keep birds." }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Close the chicken coop at dusk if you keep birds. See also Volume 26: Chickens — latch the coop every night." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "A plant saucer of water, refreshed, beats any food you were considering." }),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Tick checks still happen. Permethrin on clothes, not on the opossum." })
 								]
@@ -823,9 +924,29 @@ function GuideApp() {
 								}, item.q))
 							})]
 						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							id: "glossary",
+							className: "mt-12 scroll-mt-24",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+								className: "font-display text-2xl font-semibold",
+								children: "Glossary"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dl", {
+								className: "mt-4 divide-y divide-bark/15 border-y border-bark/15",
+								children: glossary.map((entry) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "grid gap-1 py-4 sm:grid-cols-12 sm:gap-4",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "font-medium sm:col-span-4",
+										children: entry.term
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-sm leading-relaxed text-ink/75 sm:col-span-8",
+										children: entry.def
+									})]
+								}, entry.term))
+							})]
+						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-10 max-w-3xl text-sm leading-relaxed text-ink/60",
-							children: "Providing a nest box and some messy cover is generally legal. Trapping, relocating, or keeping a wild opossum is regulated and often illegal. This is passive housing, not wildlife control and not veterinary advice. If your state wildlife agency says otherwise, they win."
+							children: "Providing a nest box and messy cover is generally legal. Trapping, relocating, or keeping a wild opossum is regulated and often illegal. Wildlife rehabilitation requires a state permit. If you are not a licensed rehabilitator, do not raise orphans. Call one. Check your city, county, HOA, and state wildlife agency before you install dens or leave out water, in case local rules limit feeding or sheltering wildlife. Their rules win. This is passive housing, not wildlife control and not veterinary advice. If your state wildlife agency says otherwise, they win. Blue and the Awesome Dudes are not responsible for bites, ticks, property damage, or legal trouble. Part of The Education Revolution pocket guide series. Privacy: This guide does not collect your name, email, or any personal information. Your build checklist is saved only on your own device."
 						})
 					]
 				})
