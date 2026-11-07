@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Opossum Boxes: Hollow Home";
+const APP_NAME = "Volume 28: Opossum Boxes (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A field manual for a dry backyard den box Virginia opossums may use as extra shelter. It is not a dependable way to attract an opossum or reduce ticks.",
+          "Volume 28 of The Education Revolution, by Blue and the Awesome Dudes. A field manual for a dry backyard den box Virginia opossums may use as extra shelter. It is not a dependable way to attract an opossum or reduce ticks.",
       },
       { name: "theme-color", content: "#f4ebd8" },
     ],
